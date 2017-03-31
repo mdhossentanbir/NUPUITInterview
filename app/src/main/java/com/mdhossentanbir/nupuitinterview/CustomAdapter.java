@@ -50,7 +50,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                        if (oneTime>=contactLists.size()){
                            oneTime = contactLists.size();
                            notifyDataSetChanged();
-                           holder.button.setText("No More Contacts");
+                           holder.button.setText("No more results to show");
                        }else {
                            notifyDataSetChanged();
                        }
