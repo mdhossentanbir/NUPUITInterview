@@ -47,7 +47,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                    if (contactLists.size()>position){
                        System.out.println("More Available");
                        oneTime+=10;
-                       if (oneTime>contactLists.size()){
+                       if (oneTime>=contactLists.size()){
                            oneTime = contactLists.size();
                            notifyDataSetChanged();
                            holder.button.setText("No More Contacts");
